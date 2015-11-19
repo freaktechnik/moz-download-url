@@ -1,0 +1,24 @@
+{
+  "name": "moz-download-url",
+  "version": "1.0.1",
+  "description": "Get URLs to download mozilla products from",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mozilla",
+    "firefox",
+    "thunderbird",
+    "download",
+    "url",
+    "get",
+    "latest",
+    "esr",
+    "beta",
+    "aurora",
+    "nightly"
+  ],
+  "author": "freaktechnik (http://humanoids.be)",
+  "license": "MPL-2.0"
+}

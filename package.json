@@ -20,5 +20,12 @@
     "nightly"
   ],
   "author": "freaktechnik (http://humanoids.be)",
-  "license": "MPL-2.0"
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/freaktechnik/moz-download-url/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/freaktechnik/moz-download-url.git"
+  }
 }

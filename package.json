@@ -1,6 +1,6 @@
 {
   "name": "moz-download-url",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Get URLs to download mozilla products from",
   "main": "index.js",
   "scripts": {

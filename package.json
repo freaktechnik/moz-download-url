@@ -4,7 +4,9 @@
   "description": "Get URLs to download mozilla products from",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run lint && nyc ava",
+    "lint": "eslint index.js test/",
+    "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov"
   },
   "keywords": [
     "mozilla",
@@ -27,5 +29,16 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/freaktechnik/moz-download-url.git"
+  },
+  "homepage": "https://gitub.com/freaktechnik/moz-download-url",
+  "devDependencies": {
+    "ava": "^0.15.2",
+    "babel-eslint": "^6.1.2",
+    "codecov": "^1.0.1",
+    "eslint": "^3.2.0",
+    "eslint-plugin-ava": "^2.5.0",
+    "eslint-plugin-babel": "^3.3.0",
+    "eslint-plugin-jsdoc": "^2.3.1",
+    "nyc": "^7.1.0"
   }
 }

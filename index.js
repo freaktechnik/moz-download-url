@@ -51,11 +51,12 @@ exports.THUNDERBIRD = {
 
 /**
  * Create an URL to download a mozilla product from.
- * @argument {string} product - A product identifier. Use the constants for help.
- * @argument {string} os - An OS indentifier. Use the constants for help.
- * @argument {string} lang - Language code for the product to download. Android
+ *
+ * @param {string} product - A product identifier. Use the constants for help.
+ * @param {string} os - An OS indentifier. Use the constants for help.
+ * @param {string} lang - Language code for the product to download. Android
  *                           also supports "multi".
- * @return {string} URL to download the product from.
+ * @returns {string} URL to download the product from.
  */
 exports.build = function(product, os, lang) {
     return "https://download.mozilla.org/?product="+product+"&os="+os+"&lang="+lang;

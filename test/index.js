@@ -9,19 +9,19 @@ function checkConstName(t, constName) {
 checkConstName.title = (providedTitle, constName) => `Checking for correct naming of constant ${providedTitle}.${constName}`;
 
 for(let c in mdu.PLATFORMS) {
-    test(checkConstName, c);
+    test("PLATFORMS", checkConstName, c);
 }
 
 for(let c in mdu.FIREFOX) {
-    test(checkConstName, c);
+    test("FIREFOX", checkConstName, c);
 }
 
 for(let c in mdu.FIREFOX_FOR_ANDROID) {
-    test(checkConstName, c);
+    test("FIREFOX_FOR_ANDROID", checkConstName, c);
 }
 
 for(let c in mdu.THUNDERBIRD) {
-    test(checkConstName, c);
+    test("THUNDERBIRD", checkConstName, c);
 }
 
 test("Check basic module anatomy", (t) => {

@@ -8,6 +8,15 @@
 "use strict";
 
 /**
+ * Available products
+ */
+exports.PRODUCTS = {
+    THUNDERBIRD: "thunderbird",
+    FIREFOX: "firefox",
+    FIREFOX_FOR_ANDROID: "fennec"
+};
+
+/**
  * Available platforms.
  */
 exports.PLATFORMS = {
@@ -47,6 +56,18 @@ exports.FIREFOX_FOR_ANDROID = {
 exports.THUNDERBIRD = {
     LATEST: "thunderbird-latest",
     LATEST_BETA: "thunderbird-beta-latest"
+};
+
+/**
+ * Returns a product identifier for a specific version.
+ *
+ * @param {string} product - A product constant from the PRODUCTS enum.
+ * @param {string} version - A Firefox version string. Typically only supports
+ *                              release and beta versions (example: 49.0b1).
+ * @returns {string} A product identifier.
+ */
+exports.getProductVersion = function(product, version) {
+    return product + "-" + version;
 };
 
 /**

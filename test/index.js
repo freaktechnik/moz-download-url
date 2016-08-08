@@ -24,13 +24,19 @@ for(let c in mdu.THUNDERBIRD) {
     test("THUNDERBIRD", checkConstName, c);
 }
 
+for(let c in mdu.PRODUCTS) {
+    test("PRODUCTS", checkConstName, c);
+}
+
 test("Check basic module anatomy", (t) => {
     const expectedProperties = {
         "PLATFORMS": "object",
         "FIREFOX": "object",
         "FIREFOX_FOR_ANDROID": "object",
         "THUNDERBIRD": "object",
-        "build": "function"
+        "build": "function",
+        "PRODUCTS": "object",
+        "getProductVersion": "function"
     };
 
     for(let p in expectedProperties) {
@@ -44,4 +50,12 @@ test("Build URL with empty strings", (t) => {
 
 test("Build URL", (t) => {
     t.is(mdu.build("te-st", "foo", "ba-rz"), "https://download.mozilla.org/?product=te-st&os=foo&lang=ba-rz");
+});
+
+test("Build version identifier beta", (t) => {
+    t.is(mdu.getProductVersion("test", "49.0b1"), "test-49.0b1");
+});
+
+test("Build version identifier release", (t) => {
+    t.is(mdu.getProductVersion("test", "48.0"), "test-48.0");
 });

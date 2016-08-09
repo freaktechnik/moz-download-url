@@ -1,7 +1,16 @@
 import test from 'ava';
 import mdu from '../';
 
-const TOP_LEVEL_CONSTS = [ "PLATFORMS", "FIREFOX", "FIREFOX_FOR_ANDROID", "THUNDERBIRD", "PRODUCTS" ];
+const EXPECTED_PROPERTIES = {
+        "PLATFORMS": "object",
+        "FIREFOX": "object",
+        "FIREFOX_FOR_ANDROID": "object",
+        "THUNDERBIRD": "object",
+        "build": "function",
+        "PRODUCTS": "object",
+        "getProductVersion": "function"
+    },
+    TOP_LEVEL_CONSTS = Object.keys(EXPECTED_PROPERTIES).filter((k) => EXPECTED_PROPERTIES[k] == "object");
 
 function checkConstName(t, constName) {
     t.regex(constName, /^[A-Z0-9_]+$/);
@@ -22,24 +31,16 @@ for(const n of TOP_LEVEL_CONSTS) {
 }
 
 test("Check basic module anatomy", (t) => {
-    const expectedProperties = {
-        "PLATFORMS": "object",
-        "FIREFOX": "object",
-        "FIREFOX_FOR_ANDROID": "object",
-        "THUNDERBIRD": "object",
-        "build": "function",
-        "PRODUCTS": "object",
-        "getProductVersion": "function"
-    };
-
-    for(let p in expectedProperties) {
-        t.is(typeof mdu[p], expectedProperties[p]);
+    for(let p in EXPECTED_PROPERTIES) {
+        t.is(typeof mdu[p], EXPECTED_PROPERTIES[p]);
     }
 });
 
 test("All const names in PRODUCTS should also be top-level consts", (t) => {
     for(const c in mdu.PRODUCTS) {
         t.true(c in mdu);
+        t.not(c, "PRODUCTS");
+        t.not(c, "PLATFORMS");
     }
 });
 

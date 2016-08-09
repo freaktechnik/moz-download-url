@@ -32,7 +32,7 @@
   },
   "homepage": "https://gitub.com/freaktechnik/moz-download-url",
   "devDependencies": {
-    "ava": "^0.15.2",
+    "ava": "^0.16.0",
     "babel-eslint": "^6.1.2",
     "codecov": "^1.0.1",
     "eslint": "^3.2.0",

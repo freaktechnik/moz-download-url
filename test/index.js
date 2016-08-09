@@ -19,6 +19,7 @@ checkConstName.title = (providedTitle, constName) => `Checking for correct namin
 
 function checkConstValue(t, constValue) {
     t.is(typeof constValue, "string");
+    t.regex(constValue, /^[a-z0-9-]+$/);
 }
 checkConstValue.title = (providedTitle) => `Checking value of constant ${providedTitle}`;
 

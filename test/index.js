@@ -32,7 +32,7 @@ for(const n of TOP_LEVEL_CONSTS) {
 }
 
 test("Check basic module anatomy", (t) => {
-    for(let p in EXPECTED_PROPERTIES) {
+    for(const p in EXPECTED_PROPERTIES) {
         t.is(typeof mdu[p], EXPECTED_PROPERTIES[p]);
     }
 });

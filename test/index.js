@@ -53,9 +53,9 @@ test("Build URL", (t) => {
 });
 
 test("Build version identifier beta", (t) => {
-    t.is(mdu.getProductVersion("test", "49.0b1"), "test-49.0b1");
+    t.is(mdu.getProductVersion("test", "49.0b1"), "test-49.0b1-SSL");
 });
 
 test("Build version identifier release", (t) => {
-    t.is(mdu.getProductVersion("test", "48.0"), "test-48.0");
+    t.is(mdu.getProductVersion("test", "48.0"), "test-48.0-SSL");
 });

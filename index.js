@@ -67,7 +67,7 @@ exports.THUNDERBIRD = {
  * @returns {string} A product identifier.
  */
 exports.getProductVersion = function(product, version) {
-    return product + "-" + version;
+    return product + "-" + version + "-SSL";
 };
 
 /**

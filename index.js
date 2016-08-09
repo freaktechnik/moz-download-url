@@ -35,9 +35,12 @@ exports.PLATFORMS = {
  */
 exports.FIREFOX = {
     LATEST: "firefox-latest",
+    LATEST_STUB: "firefox-stub",
     LATEST_ESR: "firefox-esr-latest",
     LATEST_BETA: "firefox-beta-latest",
-    LATEST_AURORA: "firefox-aurora-latest",
+    LATEST_BETA_STUB: "firefox-beta-stub",
+    LATEST_AURORA: "firefox-aurora-latest-ssl",
+    LATEST_AURORA_STUB: "firefox-aurora-stub",
     LATEST_NIGHTLY: "firefox-nightly-latest"
 };
 

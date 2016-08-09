@@ -10,6 +10,7 @@
 /**
  * Available products
  * @enum {string}
+ * @readonly
  */
 exports.PRODUCTS = {
     THUNDERBIRD: "thunderbird",
@@ -20,6 +21,7 @@ exports.PRODUCTS = {
 /**
  * Available platforms.
  * @enum {string}
+ * @readonly
  */
 exports.PLATFORMS = {
     WIN32: "win",
@@ -35,6 +37,7 @@ exports.PLATFORMS = {
 /**
  * Available Firefox latest versions. Doesn't support the Android platforms.
  * @enum {string}
+ * @readonly
  */
 exports.FIREFOX = {
     LATEST: "firefox-latest",
@@ -51,6 +54,7 @@ exports.FIREFOX = {
  * Available latest versions for Firefox for Android. Only supports the Android
  * platforms.
  * @enum {string}
+ * @readonly
  */
 exports.FIREFOX_FOR_ANDROID = {
     LATEST: "fennec-latest",
@@ -60,6 +64,7 @@ exports.FIREFOX_FOR_ANDROID = {
 /**
  * Available Thunderbird latest versions. Doesn't support the Android platforms.
  * @enum {string}
+ * @readonly
  */
 exports.THUNDERBIRD = {
     LATEST: "thunderbird-latest",

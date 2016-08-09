@@ -9,6 +9,7 @@
 
 /**
  * Available products
+ * @enum {string}
  */
 exports.PRODUCTS = {
     THUNDERBIRD: "thunderbird",
@@ -18,6 +19,7 @@ exports.PRODUCTS = {
 
 /**
  * Available platforms.
+ * @enum {string}
  */
 exports.PLATFORMS = {
     WIN32: "win",
@@ -32,6 +34,7 @@ exports.PLATFORMS = {
 
 /**
  * Available Firefox latest versions. Doesn't support the Android platforms.
+ * @enum {string}
  */
 exports.FIREFOX = {
     LATEST: "firefox-latest",
@@ -47,6 +50,7 @@ exports.FIREFOX = {
 /**
  * Available latest versions for Firefox for Android. Only supports the Android
  * platforms.
+ * @enum {string}
  */
 exports.FIREFOX_FOR_ANDROID = {
     LATEST: "fennec-latest",
@@ -55,6 +59,7 @@ exports.FIREFOX_FOR_ANDROID = {
 
 /**
  * Available Thunderbird latest versions. Doesn't support the Android platforms.
+ * @enum {string}
  */
 exports.THUNDERBIRD = {
     LATEST: "thunderbird-latest",
@@ -64,7 +69,7 @@ exports.THUNDERBIRD = {
 /**
  * Returns a product identifier for a specific version.
  *
- * @param {string} product - A product constant from the PRODUCTS enum.
+ * @param {string} product - A product value from {@link module:moz-download-url.PRODUCTS}.
  * @param {string} version - A Firefox version string. Typically only supports
  *                              release and beta versions (example: 49.0b1).
  * @returns {string} A product identifier.
@@ -76,12 +81,12 @@ exports.getProductVersion = function(product, version) {
 /**
  * Create an URL to download a mozilla product from.
  *
- * @param {string} product - A product identifier. Use the constants for help.
- * @param {string} os - An OS indentifier. Use the constants for help.
+ * @param {string} product - A product identifier from one of the product enums.
+ * @param {string} os - An OS indentifier from {@link module:moz-download-url.PLATFORMS}.
  * @param {string} lang - Language code for the product to download. Android
  *                           also supports "multi".
  * @returns {string} URL to download the product from.
  */
 exports.build = function(product, os, lang) {
-    return "https://download.mozilla.org/?product="+product+"&os="+os+"&lang="+lang;
+    return "https://download.mozilla.org/?product=" + product + "&os=" + os + "&lang=" + lang;
 };

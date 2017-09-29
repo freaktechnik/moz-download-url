@@ -80,7 +80,7 @@ exports.THUNDERBIRD = {
  * @returns {string} A product identifier.
  */
 exports.getProductVersion = function(product, version) {
-    return product + "-" + version + "-SSL";
+    return `${product}-${version}-SSL`;
 };
 
 /**
@@ -93,5 +93,5 @@ exports.getProductVersion = function(product, version) {
  * @returns {string} URL to download the product from.
  */
 exports.build = function(product, os, lang) {
-    return "https://download.mozilla.org/?product=" + product + "&os=" + os + "&lang=" + lang;
+    return `https://download.mozilla.org/?product=${product}&os=${os}&lang=${lang}`;
 };

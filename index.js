@@ -40,14 +40,15 @@ exports.PLATFORMS = {
  * @readonly
  */
 exports.FIREFOX = {
-    LATEST: "firefox-latest",
+    LATEST: "firefox-latest-ssl",
     LATEST_STUB: "firefox-stub",
-    LATEST_ESR: "firefox-esr-latest",
-    LATEST_BETA: "firefox-beta-latest",
+    LATEST_ESR: "firefox-esr-latest-ssl",
+    LATEST_BETA: "firefox-beta-latest-ssl",
     LATEST_BETA_STUB: "firefox-beta-stub",
-    LATEST_AURORA: "firefox-aurora-latest-ssl",
-    LATEST_AURORA_STUB: "firefox-aurora-stub",
-    LATEST_NIGHTLY: "firefox-nightly-latest"
+    LATEST_DEVEDITION: "firefox-devedition-latest-ssl",
+    LATEST_DEVEDITION_STUB: "firefox-devedition-stub",
+    LATEST_NIGHTLY: "firefox-nightly-latest-l10n-ssl",
+    LATEST_NIGHTLY_STUB: "firefox-nightly-stub"
 };
 
 /**

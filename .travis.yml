@@ -2,11 +2,3 @@ sudo: false
 language: node_js
 node_js: stable
 after_success: npm run coverage
-deploy:
-  provider: npm
-  email: martin@humanoids.be
-  api_key:
-    secure: M4SAXx7BW1+h6o/z7Cb98LdUtUQ57Wkz4W3v1uk8E3MiBfxNjsy1PJSIfLrEN92PdDvBYEFCzdQ7gwJ1FG364390LL7mXqJr2jOYcXQy//2x5S7y5c6U/ggF9ouTdFXiQiQpjThvGzmEQwK0D5AHvdlIl8NNoxi8YJXWHIQqiHRXyAwP5alxSpTzOVdbHKMLRiGppnO4dPkCPEooNntxM78+DYChNy3Hyx//neDzhBUY9p9/Whr0598Pv1XnFp4NyOM8nCUgvygArcJYgm69NQuDuQ8vzZV6WYVkwckm7QeppgS24rYP53zCBK6Bj94xUXz1Kquo0RJEVOpS6ZvuysCGhch57YxB+JW611JsDXJZy1zorWenU0R7io1PiltWkncMmPng38G3m28vqaHhuKi25Glz0Lrz9LI1/7v9nxsdEUSvHOBbLSzXqlJ7U+QYKlwlzcrRa1zoULX6ruupGR5EPXSLwHOzfjvOXOR6fYFn4pbS/1CZ4RweyQGVxGLZhKUKiDc2zOEpOGm2Gl3PIx3uVYK1UFMdC+3tHb9g2BhqB3P7gYhg7na/ATebgiw5i196MsMp198hUTFdjP+n6J/C7DU0vL6QF5ELEeHqJFCGMY8TyvXYDDZ2i8TAdKept4l7wOsZsJHwTQVv9AbChp7KXPJTIsYUAJW4b6SEAP0=
-  on:
-    tags: true
-    repo: freaktechnik/moz-download-url

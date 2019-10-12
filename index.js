@@ -1,5 +1,6 @@
 /**
- * download.mozilla.org URL builder
+ * Download.mozilla.org URL builder.
+ *
  * @author Martin Giger
  * @license MPL-2.0
  * @module moz-download-url
@@ -8,7 +9,8 @@
 "use strict";
 
 /**
- * Available products
+ * Available products.
+ *
  * @enum {string}
  * @readonly
  */
@@ -20,6 +22,7 @@ exports.PRODUCTS = {
 
 /**
  * Available platforms.
+ *
  * @enum {string}
  * @readonly
  */
@@ -36,6 +39,7 @@ exports.PLATFORMS = {
 
 /**
  * Available Firefox latest versions. Doesn't support the Android platforms.
+ *
  * @enum {string}
  * @readonly
  */
@@ -54,6 +58,7 @@ exports.FIREFOX = {
 /**
  * Available latest versions for Firefox for Android. Only supports the Android
  * platforms.
+ *
  * @enum {string}
  * @readonly
  */
@@ -64,6 +69,7 @@ exports.FIREFOX_FOR_ANDROID = {
 
 /**
  * Available Thunderbird latest versions. Doesn't support the Android platforms.
+ *
  * @enum {string}
  * @readonly
  */

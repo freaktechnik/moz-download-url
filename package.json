@@ -33,7 +33,7 @@
   "homepage": "https://gitub.com/freaktechnik/moz-download-url",
   "devDependencies": {
     "@freaktechnik/eslint-config-node": "^6.6.2",
-    "@freaktechnik/eslint-config-test": "^6.6.2",
+    "@freaktechnik/eslint-config-test": "^7.0.0",
     "ava": "^2.0.0",
     "codecov": "^3.2.0",
     "eslint": "^5.14.0",

@@ -32,11 +32,11 @@
   },
   "homepage": "https://gitub.com/freaktechnik/moz-download-url",
   "devDependencies": {
-    "@freaktechnik/eslint-config-node": "^7.0.0",
-    "@freaktechnik/eslint-config-test": "^7.0.0",
+    "@freaktechnik/eslint-config-node": "^7.1.0",
+    "@freaktechnik/eslint-config-test": "^7.1.0",
     "ava": "^2.0.0",
-    "codecov": "^3.6.1",
-    "eslint": "^6.5.1",
+    "codecov": "^3.6.5",
+    "eslint": "^6.8.0",
     "nyc": "^15.0.0"
   },
   "engines": {

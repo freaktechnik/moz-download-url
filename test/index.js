@@ -13,13 +13,13 @@ const EXPECTED_PROPERTIES = {
     TOP_LEVEL_CONSTS = Object.keys(EXPECTED_PROPERTIES).filter((k) => EXPECTED_PROPERTIES[k] == "object");
 
 function checkConstName(t, constName) {
-    t.regex(constName, /^[A-Z0-9_]+$/);
+    t.regex(constName, /^[\dA-Z_]+$/);
 }
 checkConstName.title = (providedTitle, constName) => `Checking for correct naming of constant ${providedTitle}.${constName}`;
 
 function checkConstValue(t, constValue) {
     t.is(typeof constValue, "string");
-    t.regex(constValue, /^[a-z0-9-]+$/);
+    t.regex(constValue, /^[\da-z-]+$/);
 }
 checkConstValue.title = (providedTitle) => `Checking value of constant ${providedTitle}`;
 

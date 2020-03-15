@@ -1,6 +1,6 @@
 # moz-download-url
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/freaktechnik/moz-download-url.svg)](https://greenkeeper.io/)
+
 [![Build Status](https://travis-ci.org/freaktechnik/moz-download-url.svg?branch=master)](https://travis-ci.org/freaktechnik/moz-download-url) [![codecov](https://codecov.io/gh/freaktechnik/moz-download-url/branch/master/graph/badge.svg)](https://codecov.io/gh/freaktechnik/moz-download-url) [![Dependency Status](https://dependencyci.com/github/freaktechnik/moz-download-url/badge)](https://dependencyci.com/github/freaktechnik/moz-download-url)
 
 Generates an URL to download Mozilla products from.

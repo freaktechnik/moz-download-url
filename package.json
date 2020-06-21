@@ -47,7 +47,7 @@
   },
   "sideEffects": false,
   "dependencies": {
-    "snyk": "^1.319.2"
+    "snyk": "^1.346.0"
   },
   "ava": {
     "babel": true

@@ -6,9 +6,7 @@
   "scripts": {
     "test": "npm run lint && nyc ava",
     "lint": "eslint index.js test/ --ext js,json",
-    "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
-    "snyk-protect": "snyk protect",
-    "prepublish": "npm run snyk-protect"
+    "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov"
   },
   "keywords": [
     "mozilla",
@@ -46,11 +44,8 @@
     "node": ">= 8.6.0"
   },
   "sideEffects": false,
-  "dependencies": {
-    "snyk": "^1.346.0"
-  },
+  "dependencies": {},
   "ava": {
     "babel": true
-  },
-  "snyk": true
+  }
 }

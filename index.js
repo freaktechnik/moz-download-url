@@ -29,6 +29,7 @@ exports.PRODUCTS = {
 exports.PLATFORMS = {
     WIN32: "win",
     WIN64: "win64",
+    WIN64_AARCH64: "win64-aarch64",
     LINUX32: "linux",
     LINUX64: "linux64",
     MACOSX: "osx",
@@ -46,13 +47,22 @@ exports.PLATFORMS = {
 exports.FIREFOX = {
     LATEST: "firefox-latest-ssl",
     LATEST_STUB: "firefox-stub",
+    LATEST_MSI: "firefox-msi-latest-ssl",
+    LATEST_PKG: "firefox-pkg-latest-ssl",
     LATEST_ESR: "firefox-esr-latest-ssl",
+    LATEST_ESR_MSI: "firefox-esr-msi-latest-ssl",
+    LATEST_ESR_PKG: "firefox-esr-pkg-latest-ssl",
     LATEST_BETA: "firefox-beta-latest-ssl",
     LATEST_BETA_STUB: "firefox-beta-stub",
+    LATEST_BETA_MSI: "firefox-beta-msi-latest-ssl",
+    LATEST_BETA_PKG: "firefox-beta-pkg-latest-ssl",
     LATEST_DEVEDITION: "firefox-devedition-latest-ssl",
     LATEST_DEVEDITION_STUB: "firefox-devedition-stub",
+    LATEST_DEVEDITION_MSI: "firefox-devedition-msi-latest-ssl",
     LATEST_NIGHTLY: "firefox-nightly-latest-l10n-ssl",
-    LATEST_NIGHTLY_STUB: "firefox-nightly-stub"
+    LATEST_NIGHTLY_STUB: "firefox-nightly-stub",
+    LATEST_NIGHTLY_MSI: "firefox-nightly-msi-latest-l10n-ssl",
+    LATEST_NIGHTLY_PKG: "firefox-nightly-pkg-latest-l10n-ssl"
 };
 
 /**

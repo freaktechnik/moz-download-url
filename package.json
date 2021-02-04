@@ -4,9 +4,9 @@
   "description": "Get URLs to download mozilla products from",
   "main": "index.js",
   "scripts": {
-    "test": "npm run lint && nyc ava",
-    "lint": "eslint index.js test/ --ext js,json",
-    "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov"
+    "test": "npm run lint && npm run test:ava",
+    "test:ava": "nyc ava",
+    "lint": "eslint index.js test/ --ext js,json"
   },
   "keywords": [
     "mozilla",
@@ -36,7 +36,6 @@
     "@freaktechnik/eslint-config-node": "^8.0.2",
     "@freaktechnik/eslint-config-test": "^8.0.2",
     "ava": "^3.13.0",
-    "codecov": "^3.8.1",
     "eslint": "^7.19.0",
     "nyc": "^15.0.0"
   },

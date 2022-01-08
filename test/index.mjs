@@ -1,5 +1,5 @@
 import test from 'ava';
-import mdu from '..';
+import mdu from '../index.js';
 
 const EXPECTED_PROPERTIES = {
         "PLATFORMS": "object",

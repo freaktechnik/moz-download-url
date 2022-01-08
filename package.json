@@ -32,18 +32,15 @@
   },
   "homepage": "https://gitub.com/freaktechnik/moz-download-url",
   "devDependencies": {
-    "@ava/babel": "^2.0.0",
-    "@freaktechnik/eslint-config-node": "^8.0.2",
-    "@freaktechnik/eslint-config-test": "^8.0.2",
-    "ava": "^3.13.0",
-    "eslint": "^7.32.0",
+    "@freaktechnik/eslint-config-node": "^9.0.3",
+    "@freaktechnik/eslint-config-test": "^9.0.1",
+    "ava": "^4.0.1",
+    "eslint": "^8.6.0",
+    "eslint-plugin-optimize-regex": "^1.2.1",
     "nyc": "^15.0.0"
   },
   "engines": {
     "node": ">= 8.6.0"
   },
-  "sideEffects": false,
-  "ava": {
-    "babel": true
-  }
+  "sideEffects": false
 }

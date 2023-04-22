@@ -1,9 +1,9 @@
 /**
  * Download.mozilla.org URL builder.
  *
- * @author Martin Giger
- * @license MPL-2.0
  * @module moz-download-url
+ * @license MPL-2.0
+ * @author Martin Giger
  * @todo Check if platform is available for the given product.
  */
 "use strict";
@@ -11,8 +11,8 @@
 /**
  * Available products.
  *
- * @enum {string}
  * @readonly
+ * @enum {string}
  */
 exports.PRODUCTS = {
     THUNDERBIRD: "thunderbird",
@@ -23,8 +23,8 @@ exports.PRODUCTS = {
 /**
  * Available platforms.
  *
- * @enum {string}
  * @readonly
+ * @enum {string}
  */
 exports.PLATFORMS = {
     WIN32: "win",
@@ -41,8 +41,8 @@ exports.PLATFORMS = {
 /**
  * Available Firefox latest versions. Doesn't support the Android platforms.
  *
- * @enum {string}
  * @readonly
+ * @enum {string}
  */
 exports.FIREFOX = {
     LATEST: "firefox-latest-ssl",
@@ -69,8 +69,8 @@ exports.FIREFOX = {
  * Available latest versions for Firefox for Android. Only supports the Android
  * platforms.
  *
- * @enum {string}
  * @readonly
+ * @enum {string}
  */
 exports.FIREFOX_FOR_ANDROID = {
     LATEST: "fennec-latest",
@@ -80,8 +80,8 @@ exports.FIREFOX_FOR_ANDROID = {
 /**
  * Available Thunderbird latest versions. Doesn't support the Android platforms.
  *
- * @enum {string}
  * @readonly
+ * @enum {string}
  */
 exports.THUNDERBIRD = {
     LATEST: "thunderbird-latest",

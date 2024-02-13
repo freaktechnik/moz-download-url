@@ -4,7 +4,6 @@ import * as mdu from '../index.js';
 const EXPECTED_PROPERTIES = {
         "PLATFORMS": "object",
         "FIREFOX": "object",
-        "FIREFOX_FOR_ANDROID": "object",
         "THUNDERBIRD": "object",
         "build": "function",
         "PRODUCTS": "object",
@@ -33,7 +32,7 @@ for(const enumName of TOP_LEVEL_CONSTS) {
 
 test("Check basic module anatomy", (t) => {
     for(const property in EXPECTED_PROPERTIES) {
-        t.is(typeof mdu[property], EXPECTED_PROPERTIES[property]);
+        t.is(typeof mdu[property], EXPECTED_PROPERTIES[property], `type of ${property}`);
     }
 });
 

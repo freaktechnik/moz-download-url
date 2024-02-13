@@ -15,8 +15,7 @@
  */
 export const PRODUCTS = {
     THUNDERBIRD: "thunderbird",
-    FIREFOX: "firefox",
-    FIREFOX_FOR_ANDROID: "fennec"
+    FIREFOX: "firefox"
 };
 
 /**
@@ -31,10 +30,7 @@ export const PLATFORMS = {
     WIN64_AARCH64: "win64-aarch64",
     LINUX32: "linux",
     LINUX64: "linux64",
-    MACOSX: "osx",
-    ANDROID: "android",
-    ANDROID_X86: "android-x86",
-    ANDROID_API9: "android-api-9"
+    MACOSX: "osx"
 };
 
 /**
@@ -50,30 +46,21 @@ export const FIREFOX = {
     LATEST_PKG: "firefox-pkg-latest-ssl",
     LATEST_ESR: "firefox-esr-latest-ssl",
     LATEST_ESR_MSI: "firefox-esr-msi-latest-ssl",
+    LATEST_ESR_MSIX: "firefox-esr-msix-latest-ssl",
     LATEST_ESR_PKG: "firefox-esr-pkg-latest-ssl",
     LATEST_BETA: "firefox-beta-latest-ssl",
     LATEST_BETA_STUB: "firefox-beta-stub",
     LATEST_BETA_MSI: "firefox-beta-msi-latest-ssl",
+    LATEST_BETA_MSIX: "firefox-beta-msix-latest-ssl",
     LATEST_BETA_PKG: "firefox-beta-pkg-latest-ssl",
     LATEST_DEVEDITION: "firefox-devedition-latest-ssl",
     LATEST_DEVEDITION_STUB: "firefox-devedition-stub",
     LATEST_DEVEDITION_MSI: "firefox-devedition-msi-latest-ssl",
+    LATEST_DEVEDITION_MSIX: "firefox-devedition-msix-latest-ssl",
     LATEST_NIGHTLY: "firefox-nightly-latest-l10n-ssl",
     LATEST_NIGHTLY_STUB: "firefox-nightly-stub",
     LATEST_NIGHTLY_MSI: "firefox-nightly-msi-latest-l10n-ssl",
     LATEST_NIGHTLY_PKG: "firefox-nightly-pkg-latest-l10n-ssl"
-};
-
-/**
- * Available latest versions for Firefox for Android. Only supports the Android
- * platforms.
- *
- * @readonly
- * @enum {string}
- */
-export const FIREFOX_FOR_ANDROID = {
-    LATEST: "fennec-latest",
-    LATEST_BETA: "fennec-beta-latest"
 };
 
 /**
@@ -84,7 +71,10 @@ export const FIREFOX_FOR_ANDROID = {
  */
 export const THUNDERBIRD = {
     LATEST: "thunderbird-latest",
-    LATEST_BETA: "thunderbird-beta-latest"
+    LATEST_MSIX: "thunderbird-msix-latest-ssl",
+    LATEST_BETA: "thunderbird-beta-latest",
+    LATEST_BETA_MSIX: "thunderbird-beta-msix-latest-ssl",
+    LATEST_DAILY: "thunderbird-nightly-latest"
 };
 
 /**

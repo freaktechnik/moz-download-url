@@ -1,6 +1,6 @@
 # moz-download-url
 
-[![codecov](https://codecov.io/gh/freaktechnik/moz-download-url/branch/main/graph/badge.svg)](https://codecov.io/gh/freaktechnik/moz-download-url)
+[![codecov](https://codecov.io/github/freaktechnik/moz-download-url/graph/badge.svg?token=LqqcXtBadN)](https://codecov.io/github/freaktechnik/moz-download-url)
 
 Generates an URL to download Mozilla products from.
 

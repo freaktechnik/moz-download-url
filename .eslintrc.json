@@ -1,9 +1,6 @@
 {
     "parserOptions": {
-        "sourceType": "script"
-    },
-    "rules": {
-        "unicorn/prefer-module": 0
+        "sourceType": "module"
     },
     "extends": "@freaktechnik/eslint-config-node"
 }

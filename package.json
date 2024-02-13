@@ -3,9 +3,10 @@
   "version": "2.1.0",
   "description": "Get URLs to download mozilla products from",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "npm run lint && npm run test:ava",
-    "test:ava": "nyc ava",
+    "test:ava": "c8 ava",
     "lint": "eslint index.js test/ --ext js,json"
   },
   "keywords": [
@@ -35,12 +36,12 @@
     "@freaktechnik/eslint-config-node": "^9.2.1",
     "@freaktechnik/eslint-config-test": "^9.2.1",
     "ava": "^6.1.1",
+    "c8": "^9.1.0",
     "eslint": "^8.56.0",
-    "eslint-plugin-optimize-regex": "^1.2.1",
-    "nyc": "^15.0.0"
+    "eslint-plugin-optimize-regex": "^1.2.1"
   },
   "engines": {
-    "node": ">= 8.6.0"
+    "node": ">= 18.0.0"
   },
   "sideEffects": false
 }

@@ -19,7 +19,7 @@ possible other supported values.
 ## Example
 
 ```js
-var mdu = require("moz-download-url");
+import * as mdu from "moz-download-url";
 
 // Get the URL to download the latest English (US) Firefox release for a 64-bit
 // Linux.

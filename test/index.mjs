@@ -1,5 +1,5 @@
 import test from 'ava';
-import mdu from '../index.js';
+import * as mdu from '../index.js';
 
 const EXPECTED_PROPERTIES = {
         "PLATFORMS": "object",
@@ -23,32 +23,32 @@ function checkConstValue(t, constValue) {
 }
 checkConstValue.title = (providedTitle) => `Checking value of constant ${providedTitle}`;
 
-for(const n of TOP_LEVEL_CONSTS) {
-    test(checkConstName, n);
-    for(const c in mdu[n]) {
-        test(n, checkConstName, c);
-        test(`${n}.${c}`, checkConstValue, mdu[n][c]);
+for(const enumName of TOP_LEVEL_CONSTS) {
+    test("mdu", checkConstName, enumName);
+    for(const key in mdu[enumName]) {
+        test(enumName, checkConstName, key);
+        test(`${enumName}.${key}`, checkConstValue, mdu[enumName][key]);
     }
 }
 
 test("Check basic module anatomy", (t) => {
-    for(const p in EXPECTED_PROPERTIES) {
-        t.is(typeof mdu[p], EXPECTED_PROPERTIES[p]);
+    for(const property in EXPECTED_PROPERTIES) {
+        t.is(typeof mdu[property], EXPECTED_PROPERTIES[property]);
     }
 });
 
 test("All const names in PRODUCTS should also be top-level consts", (t) => {
-    for(const c in mdu.PRODUCTS) {
-        t.true(c in mdu);
-        t.not(c, "PRODUCTS");
-        t.not(c, "PLATFORMS");
+    for(const name in mdu.PRODUCTS) {
+        t.true(name in mdu);
+        t.not(name, "PRODUCTS");
+        t.not(name, "PLATFORMS");
     }
 });
 
 test("Products should at least include LATEST and LATEST_BETA", (t) => {
-    for(const c in mdu.PRODUCTS) {
-        t.true("LATEST" in mdu[c]);
-        t.true("LATEST_BETA" in mdu[c]);
+    for(const key in mdu.PRODUCTS) {
+        t.true("LATEST" in mdu[key]);
+        t.true("LATEST_BETA" in mdu[key]);
     }
 });
 

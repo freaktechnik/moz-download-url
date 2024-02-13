@@ -6,7 +6,6 @@
  * @author Martin Giger
  * @todo Check if platform is available for the given product.
  */
-"use strict";
 
 /**
  * Available products.
@@ -14,7 +13,7 @@
  * @readonly
  * @enum {string}
  */
-exports.PRODUCTS = {
+export const PRODUCTS = {
     THUNDERBIRD: "thunderbird",
     FIREFOX: "firefox",
     FIREFOX_FOR_ANDROID: "fennec"
@@ -26,7 +25,7 @@ exports.PRODUCTS = {
  * @readonly
  * @enum {string}
  */
-exports.PLATFORMS = {
+export const PLATFORMS = {
     WIN32: "win",
     WIN64: "win64",
     WIN64_AARCH64: "win64-aarch64",
@@ -44,7 +43,7 @@ exports.PLATFORMS = {
  * @readonly
  * @enum {string}
  */
-exports.FIREFOX = {
+export const FIREFOX = {
     LATEST: "firefox-latest-ssl",
     LATEST_STUB: "firefox-stub",
     LATEST_MSI: "firefox-msi-latest-ssl",
@@ -72,7 +71,7 @@ exports.FIREFOX = {
  * @readonly
  * @enum {string}
  */
-exports.FIREFOX_FOR_ANDROID = {
+export const FIREFOX_FOR_ANDROID = {
     LATEST: "fennec-latest",
     LATEST_BETA: "fennec-beta-latest"
 };
@@ -83,7 +82,7 @@ exports.FIREFOX_FOR_ANDROID = {
  * @readonly
  * @enum {string}
  */
-exports.THUNDERBIRD = {
+export const THUNDERBIRD = {
     LATEST: "thunderbird-latest",
     LATEST_BETA: "thunderbird-beta-latest"
 };
@@ -96,9 +95,7 @@ exports.THUNDERBIRD = {
  *                              release and beta versions (example: 49.0b1).
  * @returns {string} A product identifier.
  */
-exports.getProductVersion = function(product, version) {
-    return `${product}-${version}-SSL`;
-};
+export const getProductVersion = (product, version) => `${product}-${version}-SSL`;
 
 /**
  * Create an URL to download a mozilla product from.
@@ -109,6 +106,4 @@ exports.getProductVersion = function(product, version) {
  *                           also supports "multi".
  * @returns {string} URL to download the product from.
  */
-exports.build = function(product, os, lang) {
-    return `https://download.mozilla.org/?product=${product}&os=${os}&lang=${lang}`;
-};
+export const build = (product, os, lang) => `https://download.mozilla.org/?product=${product}&os=${os}&lang=${lang}`;

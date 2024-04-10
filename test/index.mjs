@@ -7,7 +7,7 @@ const EXPECTED_PROPERTIES = {
         "THUNDERBIRD": "object",
         "build": "function",
         "PRODUCTS": "object",
-        "getProductVersion": "function"
+        "getProductVersion": "function",
     },
     TOP_LEVEL_CONSTS = Object.keys(EXPECTED_PROPERTIES).filter((k) => EXPECTED_PROPERTIES[k] == "object");
 

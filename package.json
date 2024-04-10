@@ -8,7 +8,7 @@
     "test": "npm run lint && npm run test:ava",
     "test:ava": "c8 ava",
     "coverage": "c8 report -r lcov",
-    "lint": "eslint index.js test/ --ext js,json"
+    "lint": "eslint index.js test/"
   },
   "keywords": [
     "mozilla",
@@ -34,8 +34,8 @@
   },
   "homepage": "https://gitub.com/freaktechnik/moz-download-url",
   "devDependencies": {
-    "@freaktechnik/eslint-config-node": "^9.2.1",
-    "@freaktechnik/eslint-config-test": "^9.2.1",
+    "@freaktechnik/eslint-config-node": "^10.0.3",
+    "@freaktechnik/eslint-config-test": "^10.0.3",
     "ava": "^6.1.2",
     "c8": "^9.1.0",
     "eslint": "^8.57.0",

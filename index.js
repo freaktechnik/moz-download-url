@@ -15,7 +15,7 @@
  */
 export const PRODUCTS = {
     THUNDERBIRD: "thunderbird",
-    FIREFOX: "firefox"
+    FIREFOX: "firefox",
 };
 
 /**
@@ -30,7 +30,7 @@ export const PLATFORMS = {
     WIN64_AARCH64: "win64-aarch64",
     LINUX32: "linux",
     LINUX64: "linux64",
-    MACOSX: "osx"
+    MACOSX: "osx",
 };
 
 /**
@@ -60,7 +60,7 @@ export const FIREFOX = {
     LATEST_NIGHTLY: "firefox-nightly-latest-l10n-ssl",
     LATEST_NIGHTLY_STUB: "firefox-nightly-stub",
     LATEST_NIGHTLY_MSI: "firefox-nightly-msi-latest-l10n-ssl",
-    LATEST_NIGHTLY_PKG: "firefox-nightly-pkg-latest-l10n-ssl"
+    LATEST_NIGHTLY_PKG: "firefox-nightly-pkg-latest-l10n-ssl",
 };
 
 /**
@@ -74,7 +74,7 @@ export const THUNDERBIRD = {
     LATEST_MSIX: "thunderbird-msix-latest-ssl",
     LATEST_BETA: "thunderbird-beta-latest",
     LATEST_BETA_MSIX: "thunderbird-beta-msix-latest-ssl",
-    LATEST_DAILY: "thunderbird-nightly-latest"
+    LATEST_DAILY: "thunderbird-nightly-latest",
 };
 
 /**

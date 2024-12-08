@@ -22,6 +22,7 @@ function checkConstValue(t, constValue) {
 }
 checkConstValue.title = (providedTitle) => `Checking value of constant ${providedTitle}`;
 
+/* eslint-disable import/namespace */
 for(const enumName of TOP_LEVEL_CONSTS) {
     test("mdu", checkConstName, enumName);
     for(const key in mdu[enumName]) {
@@ -50,6 +51,7 @@ test("Products should at least include LATEST and LATEST_BETA", (t) => {
         t.true("LATEST_BETA" in mdu[key]);
     }
 });
+/* eslint-enable import/namespace */
 
 test("Build URL with empty strings", (t) => {
     t.is(mdu.build("", "", ""), "https://download.mozilla.org/?product=&os=&lang=");

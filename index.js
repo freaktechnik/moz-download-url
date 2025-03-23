@@ -70,8 +70,10 @@ export const FIREFOX = {
  * @enum {string}
  */
 export const THUNDERBIRD = {
-    LATEST: "thunderbird-latest",
+    LATEST: "thunderbird-latest-ssl",
     LATEST_MSIX: "thunderbird-msix-latest-ssl",
+    LATEST_ESR: "thunderbird-esr-latest-ssl",
+    LATEST_ESR_MSIX: "thunderbird-esr-msix-latest-ssl",
     LATEST_BETA: "thunderbird-beta-latest",
     LATEST_BETA_MSIX: "thunderbird-beta-msix-latest-ssl",
     LATEST_DAILY: "thunderbird-nightly-latest",

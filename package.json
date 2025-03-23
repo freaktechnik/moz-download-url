@@ -44,5 +44,8 @@
   "engines": {
     "node": ">= 18.0.0"
   },
-  "sideEffects": false
+  "sideEffects": false,
+  "publishConfig": {
+    "provenance": true
+  }
 }

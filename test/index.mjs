@@ -25,20 +25,26 @@ checkConstValue.title = (providedTitle) => `Checking value of constant ${provide
 /* eslint-disable import/namespace */
 for(const enumName of TOP_LEVEL_CONSTS) {
     test("mdu", checkConstName, enumName);
-    for(const key in mdu[enumName]) {
+    for(const [
+        key,
+        value,
+    ] of Object.entries(mdu[enumName])) {
         test(enumName, checkConstName, key);
-        test(`${enumName}.${key}`, checkConstValue, mdu[enumName][key]);
+        test(`${enumName}.${key}`, checkConstValue, value);
     }
 }
 
 test("Check basic module anatomy", (t) => {
-    for(const property in EXPECTED_PROPERTIES) {
-        t.is(typeof mdu[property], EXPECTED_PROPERTIES[property], `type of ${property}`);
+    for(const [
+        property,
+        type,
+    ] of Object.entries(EXPECTED_PROPERTIES)) {
+        t.is(typeof mdu[property], type, `type of ${property}`);
     }
 });
 
 test("All const names in PRODUCTS should also be top-level consts", (t) => {
-    for(const name in mdu.PRODUCTS) {
+    for(const name of Object.keys(mdu.PRODUCTS)) {
         t.true(name in mdu);
         t.not(name, "PRODUCTS");
         t.not(name, "PLATFORMS");
@@ -46,7 +52,7 @@ test("All const names in PRODUCTS should also be top-level consts", (t) => {
 });
 
 test("Products should at least include LATEST and LATEST_BETA", (t) => {
-    for(const key in mdu.PRODUCTS) {
+    for(const key of Object.keys(mdu.PRODUCTS)) {
         t.true("LATEST" in mdu[key]);
         t.true("LATEST_BETA" in mdu[key]);
     }

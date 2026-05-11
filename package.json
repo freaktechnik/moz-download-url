@@ -38,7 +38,7 @@
     "@freaktechnik/eslint-config-test": "^13.0.0",
     "ava": "^8.0.0",
     "c8": "^11.0.0",
-    "eslint": "^9.39.2",
+    "eslint": "^10.3.0",
     "eslint-plugin-optimize-regex": "^1.2.1"
   },
   "engines": {

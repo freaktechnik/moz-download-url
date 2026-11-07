@@ -45,7 +45,7 @@ test("Check basic module anatomy", (t) => {
 
 test("All const names in PRODUCTS should also be top-level consts", (t) => {
     for(const name of Object.keys(mdu.PRODUCTS)) {
-        t.true(name in mdu);
+        t.true(Object.hasOwn(mdu, name));
         t.not(name, "PRODUCTS");
         t.not(name, "PLATFORMS");
     }
